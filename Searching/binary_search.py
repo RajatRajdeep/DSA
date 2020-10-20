@@ -1,5 +1,3 @@
-arr = list(range(0, 10))
-
 def binary_search(arr, val):
     low = 0
     high = len(arr)-1
@@ -28,5 +26,6 @@ def recursive_binary_search(arr, low, high, val):
 
 if __name__ == "__main__":
     import sys
+    arr = list(range(0, 10))
     print("Using While Loop : ", binary_search(arr, int(sys.argv[1])))
     print("Using Recursive Function : ", recursive_binary_search(arr, 0, len(arr)-1, int(sys.argv[1])))
